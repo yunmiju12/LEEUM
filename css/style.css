@@ -385,8 +385,8 @@
 .text_icon,
 .card_iconbox {
   border: 2px solid #2c2c2c;
-  padding: 0 10px;
   cursor: pointer;
+  padding: 3px 10px;
 }
 .text_icon:hover,
 .card_iconbox:hover {
@@ -431,7 +431,6 @@
   gap: 5px;
 }
 .card_icon {
-  padding-top: 8px;
   width: 25px;
 }
 .card_mainimg {
@@ -862,5 +861,12 @@ footer {
   }
   .card-title {
     font-size: 1.2rem;
+  }
+  .card_btn {
+    font-size: 1rem;
+  }
+  .card_icon svg {
+    width: 20px;
+    height: 20px;
   }
 }
