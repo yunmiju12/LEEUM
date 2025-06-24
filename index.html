@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS css cdn연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- js 연결 -->
+    <script src="./js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS js cdn연결 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>LEEUM</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header_area">
+        <div class="contain">
+          <div class="logo"><img src="./img/LEEUM_logo.svg" alt="" /></div>
+          <div class="header_box">
+            <ul class="login_text">
+              <li class="headertext">
+                <a href="#none" class="login">로그인</a>
+              </li>
+              <li class="headertext">
+                <a href="#none" class="sign_up">회원가입</a>
+              </li>
+            </ul>
+            <a href="#none" class="header_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section class="banner">
+        <h1 class="banner_maintitle">LEEUM MUSEUM OF ART</h1>
+        <div class="contain">
+          <div class="artwork_box box1">
+            <div class="bn_box1">
+              <div class="artwork1 art">
+                <div class="art_img">
+                  <img src="./img/banne_img1.png" alt="" />
+                </div>
+                <div class="hover_text">
+                  <h2 class="bn_first_title">고뇌를 위한 습작</h2>
+                  <p class="bn_artist_name">아쉴 고르키[1947]</p>
+                  <span>캔버스 유채<br />91.4 x 121.9cm</span>
+                </div>
+              </div>
+              <div class="artwork2 art">
+                <div class="art_img">
+                  <img src="./img/banne_img2.png" alt="" />
+                </div>
+                <div class="hover_text">
+                  <h2 class="bn_first_title">무제(장미)</h2>
+                  <p class="bn_artist_name">제임스 로젠퀴스트[1984]</p>
+                  <span>합판 위 캔버스 유채<br />160.5 x 213.1cm</span>
+                </div>
+              </div>
+            </div>
+            <div class="bn_box2">
+              <div class="artwork_text">contemporary art exhibition</div>
+              <div class="artwork3 art">
+                <div class="art_img">
+                  <img src="./img/banne_img3.png" alt="" />
+                </div>
+                <div class="hover_text">
+                  <h2 class="bn_first_title">녹음방초</h2>
+                  <p class="bn_artist_name">김종학[1998]</p>
+                  <span>캔버스 유채<br />194 x 259.1cm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media_box">
+            <div class="artwork_box box2">
+              <div class="artwork_text">modern artwork</div>
+              <div class="artwork4 art">
+                <div class="art_img">
+                  <img src="./img/banne_img4.png" alt="" />
+                </div>
+                <div class="hover_text">
+                  <h2 class="bn_first_title">점의 집적</h2>
+                  <p class="bn_artist_name">쿠사마 야요이[1995]</p>
+                  <span>캔버스 아크릴릭<br />292 x 230cm</span>
+                </div>
+              </div>
+            </div>
+            <div class="artwork_box box3">
+              <div class="artwork5 art">
+                <div class="art_img">
+                  <img src="./img/banne_img5.png" alt="" />
+                </div>
+                <div class="hover_text">
+                  <h2 class="bn_first_title">뉴</h2>
+                  <p class="bn_artist_name">모리스 루이스[1961]</p>
+                  <span>캔버스 아크릴릭<br />262.9 x 431.8cm</span>
+                </div>
+              </div>
+              <div class="bn_box3">
+                <div class="artwork6 art">
+                  <div class="art_img">
+                    <img src="./img/banne_img6.png" alt="" />
+                  </div>
+                  <div class="hover_text">
+                    <h2 class="bn_first_title">안테나</h2>
+                    <p class="bn_artist_name">가브리엘 오로즈코[2010]</p>
+                    <span>캔버스 템페라와 금박<br />200 x 200cm</span>
+                  </div>
+                </div>
+                <div class="artwork7 art">
+                  <div class="art_img">
+                    <img src="./img/banne_img7.png" alt="" />
+                  </div>
+                  <div class="hover_text">
+                    <h2 class="bn_first_title">산</h2>
+                    <p class="bn_artist_name">유영국[1966]</p>
+                    <span>캔버스 유채<br />163.2 x 130cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section1">
+        <div class="contain">
+          <div class="titles">exhibition</div>
+          <div class="subtitle1">/currently exhibiting</div>
+          <div class="sec1_box">
+            <!-- Swiper -->
+            <div class="swiper firstSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider">
+                  <div class="slide_img">
+                    <img src="./img/sec1_swiper1.png" alt="" />
+                  </div>
+                  <div class="sec1_slide_text">
+                    <p class="day">2025.03.11 - 2025.04.06</p>
+                    <h4 class="ex_prgram_title">
+                      국외소재문화유산 보존지원 프로그램[M1, 2층]
+                    </h4>
+                    <p class="sec1_text">
+                      삼성문화재단과 국외소재문화유산재단은 국외에 있는 한국
+                      문화유산을 보존하기 위해 ‘국외소재문화유산 보존지원
+                      프로그램’을 진행하고 있습니다. <br />
+                      특히 이번 보존처리는 2022년 9월 삼성문화재단과
+                      국외소재문화유산재단의 업무협약이 계기가 되어 사립미술관이
+                      보유한 보존 기술로 국외에 있는 우리 문화유산의 보존 및
+                      활용을 위해 협업하는 첫 사례입니다.
+                    </p>
+                    <a href="#none" class="reservation_btn">
+                      <div class="btn_text">전시 예약하기</div>
+                      <div class="btn_icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide slider">
+                  <div class="slide_img">
+                    <img src="./img/sec1_swiper2.png" alt="" />
+                  </div>
+                  <div class="sec1_slide_text">
+                    <p class="day">2024.09.05 - 2025.02.23</p>
+                    <h4 class="ex_prgram_title">
+                      전∙함: 깨달음을 담다[M1. 2층]
+                    </h4>
+                    <p class="sec1_text">
+                      {전∙함: 깨달음을 담다}展은 고려시대 불교 경전(經典)을
+                      붓으로 직접 필사(筆寫)한 사경(寫經)과 경전을 보관하기 위해
+                      만든 상자인 경함(經函) 중에서 현존 최고 걸작인 두 작품을
+                      집중 조명하는 전시입니다. 전시에서는 선조들의 간절한
+                      염원을 그대로 반영한 글과 그림을 모두 금으로
+                      이룬《감지금니 묘법연화경》전체 7권을 통해 그 귀함을 직접
+                      확인할 수 있습니다.
+                    </p>
+                    <a href="#none" class="reservation_btn">
+                      <div class="btn_text">전시 예약하기</div>
+                      <div class="btn_icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide slider">
+                  <div class="slide_img">
+                    <img src="./img/sec1_swiper3.png" alt="" />
+                  </div>
+                  <div class="sec1_slide_text">
+                    <p class="day">2025.02.27 - 2025.07.06</p>
+                    <h4 class="ex_prgram_title">
+                      피에르 위그: 리미널[블랙박스, 그라운드갤러리]
+                    </h4>
+                    <p class="sec1_text">
+                      리움미술관은 현대미술의 고정된 형식을 깨고 끊임없이 새로운
+                      세계를 탐구해 온 세계적 작가 피에르 위그의 아시아 최초
+                      개인전 (리미널)을 선보입니다. <br />
+                      이 작품들은 실시간 데이터를 활용한 프로그램과 생명공학을
+                      결합하며, 인간과 비인간의 상호 관계가 생성하는 감각적이고
+                      시적인 세계로 우리를 안내합니다.
+                    </p>
+                    <a href="#none" class="reservation_btn">
+                      <div class="btn_text">전시 예약하기</div>
+                      <div class="btn_icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide slider">
+                  <div class="slide_img">
+                    <img src="./img/sec1_swiper4.png" alt="" />
+                  </div>
+                  <div class="sec1_slide_text">
+                    <p class="day">2025.02.27 -</p>
+                    <h4 class="ex_prgram_title">현대미술 소장품[M1]</h4>
+                    <p class="sec1_text">
+                      한국 근현대미술부터 아시아와 서구 현대미술까지 국제 미술의
+                      흐름을 아우르는 리움미술관의 현대미술 소장품은 한국
+                      문화예술 발전을 향한 삼성문화재단의 오랜 신념과 열정의
+                      결실입니다. 2025년, 삼성문화재단 창립 60주년을 맞아
+                      리움미술관은 현대미술 소장품을 새로운 시각으로 조망하는
+                      자리를 마련했습니다. 이번 전시는 익히 알려진 미술관의 대표
+                      소장품들보다는 그동안 전시되지 않은 미공개 작품을 중심으로
+                      전개됩니다.
+                    </p>
+                    <a href="#none" class="reservation_btn">
+                      <div class="btn_text">전시 예약하기</div>
+                      <div class="btn_icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide slider">
+                  <div class="slide_img">
+                    <img src="./img/sec1_swiper5.png" alt="" />
+                  </div>
+                  <div class="sec1_slide_text">
+                    <h4 class="ex_prgram_title">고미술 소장품[M1. 상설전]</h4>
+                    <p class="sec1_text">
+                      리움미술관은 선사시대부터 조선시대에 이르기까지 긴 역사
+                      속에 찬란하게 꽃피운 한국 전통미술을 연구하고, 우리의
+                      귀중한 문화유산을 보존, 전승하기 위해 노력해 왔습니다.
+                      이러한 노력의 결과로, 한국을 대표하는 미술 작품들과 학술적
+                      가치가 높은 연구 자료들을 여러 분야에 걸쳐 소장하게
+                      되었습니다.
+                    </p>
+                    <a href="#none" class="reservation_btn">
+                      <div class="btn_text">전시 예약하기</div>
+                      <div class="btn_icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination_fraction"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <h1 class="maintitle">exhibition</h1>
+        <div class="contain">
+          <div class="sec2_container">
+            <div class="title">currently exhibiting</div>
+            <div class="subtitle tt1">/contemporary Art</div>
+            <div class="sec2_box1">
+              <div class="sec2_artworkbox artb1">
+                <div class="sec2_artwork1 art">
+                  <div class="art_img">
+                    <img src="./img/sec2-1.PNG" alt="" />
+                  </div>
+                  <div class="hover_text">
+                    <h2 class="sec2_first_title">작품 86, M.K</h2>
+                    <p class="sec2_artist_name">곽인식[1986]</p>
+                    <span>캔버스, 종이에 채색</span>
+                  </div>
+                </div>
+                <div class="sub_artbox tb1">
+                  <div class="sec2_artwork2 art">
+                    <div class="art_img">
+                      <img src="./img/sec2-2.PNG" alt="" />
+                    </div>
+                    <div class="hover_text">
+                      <h2 class="sec2_first_title">무제 (위에 검은 나비)</h2>
+                      <p class="sec2_artist_name">마크 그로찬[2004]</p>
+                      <span>린넨에 유채</span>
+                    </div>
+                  </div>
+                  <div class="sec2_artwork3 art">
+                    <div class="art_img">
+                      <img src="./img/sec2-3.PNG" alt="" />
+                    </div>
+                    <div class="hover_text">
+                      <h2 class="sec2_first_title">물방울</h2>
+                      <p class="sec2_artist_name">김창열[1981]</p>
+                      <span>캔버스에 유채와 먹</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2_artworkbox artb2">
+                <div class="sub_artbox">
+                  <div class="sec2_artwork4 art">
+                    <div class="art_img">
+                      <img src="./img/sec2-4.PNG" alt="" />
+                    </div>
+                    <div class="hover_text">
+                      <h2 class="sec2_first_title">
+                        탄탄보: 감은 눈으로도 볼 수 있는 불꽃과의 조우
+                      </h2>
+                      <p class="sec2_artist_name">무라카미 다카시[2013-14]</p>
+                      <span>보드 위 캔버스에 아크릴 물감</span>
+                    </div>
+                  </div>
+                  <div class="sec2_artwork5 art">
+                    <div class="art_img">
+                      <img src="./img/sec2-5.png" alt="" />
+                    </div>
+                    <div class="hover_text">
+                      <h2 class="sec2_first_title">정물</h2>
+                      <p class="sec2_artist_name">구본웅[1937]</p>
+                      <span>캔버스에 유채</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sec2_artwork6 art">
+                  <div class="art_img">
+                    <img src="./img/sec2-6.PNG" alt="" />
+                  </div>
+                  <div class="hover_text">
+                    <h2 class="sec2_first_title">냇</h2>
+                    <p class="sec2_artist_name">척 클로즈[2005-2006]</p>
+                    <span>캔버스에 유채</span>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2_artworkbox artb3">
+                <div class="sec2_artwork7 art">
+                  <div class="art_img">
+                    <img src="./img/sec2-7.PNG" alt="" />
+                  </div>
+                  <div class="hover_text">
+                    <h2 class="sec2_first_title">
+                      사각형에 대한 경의: 상호침투 A
+                    </h2>
+                    <p class="sec2_artist_name">조셉 앨버스[1969]</p>
+                    <span>메소나이트 위에 유채</span>
+                  </div>
+                </div>
+                <div class="sec2_artwork8 art">
+                  <div class="art_img">
+                    <img src="./img/sec2-8.PNG" alt="" />
+                  </div>
+                  <div class="hover_text">
+                    <h2 class="sec2_first_title">민속무용Ⅱ</h2>
+                    <p class="sec2_artist_name">게오르크 바젤리츠[1989]</p>
+                    <span>캔버스에 유채</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec2_box2">
+              <div class="subtitle tt1">/artists</div>
+              <!-- Swiper -->
+              <div class="swiper secondSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider slide1">
+                    <img src="./img/sec2-1(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide2">
+                    <img src="./img/sec2-2(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide3">
+                    <img src="./img/sec2-3(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide4">
+                    <img src="./img/sec2-4(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide5">
+                    <img src="./img/sec2-5(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide6">
+                    <img src="./img/sec2-6(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide7">
+                    <img src="./img/sec2-7(artist).png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider slide8">
+                    <img src="./img/sec2-8(artist).png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec2_box3">
+              <div class="subtitle tt1">/Contemporary Art Sculpture</div>
+              <div class="content_imgbox">
+                <div
+                  class="sec2_contentimg1"
+                  data-aos="fade-down-right"
+                  data-aos-easing="ease-in-cubic"
+                  data-aos-duration="2500"
+                >
+                  <img src="./img/sec3-1.PNG" alt="" />
+                </div>
+                <div
+                  class="sec2_contentimg2"
+                  data-aos="fade-down-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2500"
+                >
+                  <img src="/img/sec3-2.PNG" alt="" />
+                </div>
+                <div
+                  class="sec2_contentimg3"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2500"
+                >
+                  <img src="./img/sec3-3.PNG" alt="" />
+                </div>
+                <div
+                  class="sec2_contentimg4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2500"
+                >
+                  <img src="./img/sec3-4.PNG" alt="" />
+                </div>
+                <div
+                  class="sec2_contentimg5"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2500"
+                >
+                  <img src="./img/sec3-5.PNG" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec2_box4">
+              <div class="subtitle tt1">/antique art exhibition</div>
+              <div class="antique_imgbox">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2500"
+                  class="antique content1"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-1.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">감모여재도</a>
+                    <p class="subname">작가미상[조선, 19세기]</p>
+                    <span class="size">종이ㆍ채색<br />90.3 x 65.6cm</span>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2200"
+                  class="antique content2"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-2.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">풍림정거도</a>
+                    <p class="subname">안중식[1913년]</p>
+                    <span class="size">비단ㆍ채색<br />164.4 x 70.4cm</span>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1900"
+                  class="antique content3"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-3.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">공산무인도</a>
+                    <p class="subname">최북[조선, 18세기]</p>
+                    <span class="size">종이ㆍ수묵담채<br />39.9 x 37.1cm</span>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1600"
+                  class="antique content4"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-4.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">약사여래삼존도</a>
+                    <p class="subname">미상[조선, 15세기]</p>
+                    <span class="size">비단ㆍ채색<br />85.7 x 55.9cm</span>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1300"
+                  class="antique content5"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-5.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">아미타여래삼존도</a>
+                    <p class="subname">미상[고려, 14세기]</p>
+                    <span class="size"
+                      >비단ㆍ채색<br />110.7 x 51.0cm 국보</span
+                    >
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                  class="antique content6"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-6.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">고사한일도</a>
+                    <p class="subname">이재관[조선, 19세기]</p>
+                    <span class="size">종이ㆍ수묵담채<br />22.7 x 27.0cm</span>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="700"
+                  class="antique content7"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-7.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">금니산수인물영모도첩</a>
+                    <p class="subname">미상[조선, 16-17세기]</p>
+                    <span class="size">비단ㆍ금니<br />27.2 x 22.3cm</span>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="400"
+                  class="antique content8"
+                >
+                  <div class="sec2_imgbox">
+                    <img src="./img/sec4-8.PNG" alt="" />
+                  </div>
+                  <div class="antique_textbox">
+                    <a href="#none" class="box4_title">이항복 초상</a>
+                    <p class="subname">이한철[조선, 19세기]</p>
+                    <span class="size">비단ㆍ채색<br />93.6 x 49.2cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="maintitle program">PROGRAM</h1>
+      </section>
+      <section class="section3">
+        <div class="contain">
+          <div class="sec3_container">
+            <div class="sec3_box1">
+              <div class="subtitles">/book publishing</div>
+              <!-- Swiper -->
+              <div class="swiper thirdSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-1.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle">김범, 바위가 되는 법</a>
+                      <p class="subtt">(Philippe Parreno VOICE)</p>
+                      <p class="place">서울, 리움미술관, 2025</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-2.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle">필립 파레노: 보이스</a>
+                      <p class="subtt">(Philippe Parreno VOICE)</p>
+                      <p class="place">
+                        서울, 리움미술관, 2024<br />뮌헨, 하우스 데어 쿤스트,
+                        2024
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-3.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle"
+                        >니콜라스 파티: 더스트</a
+                      >
+                      <p class="subtt">(Nicolas Party, Dust)</p>
+                      <p class="place">용인, 호암미술관, 2024</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-4.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle"
+                        >백남준의 트랜스미션 두 세기에 걸친 여정</a
+                      >
+                      <p class="place">발행일 2024. 4. 30</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-5.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle"
+                        >감각 너머 포럼 총서 1 『경험으로서 미술관』</a
+                      >
+                      <p class="place">리움미술관, 2024</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-6.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle"
+                        >진흙에 물들지 않는 연꽃처럼</a
+                      >
+                      <p class="subtt">(Unsullide, Like a Lotus in mud)</p>
+                      <p class="place">용인, 호암미술관, 2024</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-7.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle">박보마, 물질의 의식</a>
+                      <p class="subtt">(Boma Pak Ritual of Matter)</p>
+                      <p class="place">서울, 리움미술관, 2024</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-8.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle">필립 파레노 '보이스'</a>
+                      <p class="subtt">
+                        (Philippe Parreno 'Voices' A Collection of Spoken Works)
+                      </p>
+                      <p class="place">서울, 리움미술관, 2024</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-9.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle">갈라포라스 김, 국보</a>
+                      <p class="subtt">(Gala Porras-Kim National Treasures)</p>
+                      <p class="place">서울, 리움미술관, 2024</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec3_slideimg">
+                      <img src="./img/sec5-10.jpg" alt="" />
+                    </div>
+                    <div class="slidetext_box">
+                      <a href="#none" class="booktitle"
+                        >강서경, 버들 북 꾀꼬리</a
+                      >
+                      <p class="subtt">
+                        (Suki Seokyeong Kang Willow Drum Oriole)
+                      </p>
+                      <p class="place">서울, 리움미술관, 2024</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="sec3_box2">
+              <div class="sec3_amenities">편의시설</div>
+              <div class="amenities_box">
+                <div class="amenities">
+                  <div class="sec3_artimg">
+                    <img src="./img/sec6-1.png" alt="" />
+                  </div>
+                  <div class="amenities_textbox">
+                    <div class="b1">B1 LEEUM STORE</div>
+                    <button data-modal="modal1" class="text_icon">
+                      자세히 보기
+                    </button>
+                  </div>
+                </div>
+                <div class="amenities">
+                  <div class="sec3_artimg">
+                    <img src="./img/sec6-2.png" alt="" />
+                  </div>
+                  <div class="amenities_textbox">
+                    <div class="b1">B1 카페 CAFE</div>
+                    <button data-modal="modal2" class="text_icon">
+                      자세히 보기
+                    </button>
+                  </div>
+                </div>
+                <div class="amenities">
+                  <div class="sec3_artimg">
+                    <img src="./img/sec6-3.png" alt="" />
+                  </div>
+                  <div class="amenities_textbox">
+                    <div class="b1">B1 개인물품보관함 LOCKER</div>
+                    <button data-modal="modal3" class="text_icon">
+                      자세히 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="modal1" class="card">
+                <div class="card_wrap">
+                  <div class="card_top">
+                    <h3 class="card-title">B1 LEEUM STORE</h3>
+                    <div class="card_iconbox">
+                      <div class="card_btn">바로가기</div>
+                      <div class="card_icon">
+                        <svg
+                          viewBox="0 0 122 122"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="Frame 19">
+                            <path
+                              id="Vector"
+                              d="M101.633 28.0949C101.633 23.8113 98.1542 20.333 93.8706 20.333L39.0401 20.333C34.7565 20.333 31.2782 23.8113 31.2782 28.0949C31.2782 32.3786 34.7565 35.8569 39.0401 35.8569L75.1768 35.8398L22.6081 88.4085C19.5753 91.4413 19.5753 96.3418 22.6081 99.3746C25.6409 102.407 30.5414 102.407 33.5742 99.3746L86.1258 46.823L86.1429 82.9254C86.1429 87.2091 89.6213 90.6874 93.9049 90.6874C98.1885 90.6874 101.667 87.2091 101.667 82.9255V28.0949L101.633 28.0949Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_mainimg">
+                    <img src="./img/sec6-1(1).png" alt="" />
+                  </div>
+                  <div class="card_body">
+                    <p class="card_text">
+                      독립적이면서도 조화롭고 실용적이면서 예술적인 작품들이
+                      어우러져 하나의 빛을 내고 있는 새로운 공간
+                      리움스토어입니다. <br />
+                      국내외에서 활약하고 있는 작가들의 손끝에서 탄생한 감각적인
+                      작품들이 가득한 공간으로 작품 하나하나가 주는 특별한
+                      감동과 환경을 생각하는 리움스토어를 느껴보실 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal2" class="card">
+                <div class="card_wrap">
+                  <div class="card_top">
+                    <h3 class="card-title">B1 카페 CAFE</h3>
+                    <div class="card_iconbox">
+                      <div class="card_btn">바로가기</div>
+                      <div class="card_icon">
+                        <svg
+                          viewBox="0 0 122 122"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="Frame 19">
+                            <path
+                              id="Vector"
+                              d="M101.633 28.0949C101.633 23.8113 98.1542 20.333 93.8706 20.333L39.0401 20.333C34.7565 20.333 31.2782 23.8113 31.2782 28.0949C31.2782 32.3786 34.7565 35.8569 39.0401 35.8569L75.1768 35.8398L22.6081 88.4085C19.5753 91.4413 19.5753 96.3418 22.6081 99.3746C25.6409 102.407 30.5414 102.407 33.5742 99.3746L86.1258 46.823L86.1429 82.9254C86.1429 87.2091 89.6213 90.6874 93.9049 90.6874C98.1885 90.6874 101.667 87.2091 101.667 82.9255V28.0949L101.633 28.0949Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_mainimg">
+                    <img src="./img/sec6-2(1).png" alt="" />
+                  </div>
+                  <div class="card_body">
+                    <p class="card_text">
+                      각자의 길을 걷던 삼형제가 향기로운 커피에 반해 오늘까지
+                      함께 조금씩 쌓아온 챔프 커피입니다. <br />
+                      형제들과 함께하며 무엇보다 인생에서 중요한 가치, 마음의
+                      나눔을 알게 되었습니다. 한 땀 한 땀 정성스런 손길, 한 방울
+                      한 방울 흘린 땀의 결실, 시간과 세상을 거스르는 공간 새로운
+                      리움에서 수많은 거장의 작품들과 함께할 작은 여운을
+                      나누고자 합니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal3" class="card">
+                <div class="card_wrap">
+                  <div class="card_top">
+                    <h3 class="card-title">B1 개인물품보관함 LOCKER</h3>
+                    <div class="card_iconbox">
+                      <div class="card_btn">바로가기</div>
+                      <div class="card_icon">
+                        <svg
+                          viewBox="0 0 122 122"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="Frame 19">
+                            <path
+                              id="Vector"
+                              d="M101.633 28.0949C101.633 23.8113 98.1542 20.333 93.8706 20.333L39.0401 20.333C34.7565 20.333 31.2782 23.8113 31.2782 28.0949C31.2782 32.3786 34.7565 35.8569 39.0401 35.8569L75.1768 35.8398L22.6081 88.4085C19.5753 91.4413 19.5753 96.3418 22.6081 99.3746C25.6409 102.407 30.5414 102.407 33.5742 99.3746L86.1258 46.823L86.1429 82.9254C86.1429 87.2091 89.6213 90.6874 93.9049 90.6874C98.1885 90.6874 101.667 87.2091 101.667 82.9255V28.0949L101.633 28.0949Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_mainimg">
+                    <img src="./img/sec6-3(1).png" alt="" />
+                  </div>
+                  <div class="card_body">
+                    <p class="card_text">
+                      자율적으로 개인물품을 보관할 수 있으며, 귀중품이나 파손
+                      위험이 있는 물품을 안전하게 보관하실 수 있습니다.
+                    </p>
+                    <div class="sub_text">
+                      <p class="text1">A TYPE : W325mm * D380mm * H485mm</p>
+                      <p class="text2">B TYPE : W384mm * D580mm * H475mm</p>
+                      <p class="text3">C TYPE : W384mm * D580mm * H960mm</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="contain">
+          <div class="relevant_information">
+            이메일 무단수집 거부 | 개인정보처리방침
+          </div>
+          <div class="footer_tad_logo">
+            <div class="footer_logo">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1857.000000pt"
+                height="467.000000pt"
+                viewBox="0 0 1857.000000 467.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,467.000000) scale(0.100000,-0.100000)"
+                >
+                  <path
+                    d="M50 2350 l0 -2300 1280 0 1280 0 0 470 0 470 -845 0 -845 0 0 1830 0
+1830 -435 0 -435 0 0 -2300z"
+                  />
+                  <path
+                    d="M3440 2350 l0 -2300 1280 0 1280 0 0 470 0 470 -845 0 -845 0 0 445
+0 445 845 0 845 0 0 470 0 470 -845 0 -845 0 0 465 0 465 845 0 845 0 0 450 0
+450 -1280 0 -1280 0 0 -2300z"
+                  />
+                  <path
+                    d="M6972 2353 l3 -2298 1300 0 1300 0 3 467 2 468 -850 0 -850 0 0 445
+0 445 848 2 847 3 3 468 2 467 -850 0 -850 0 0 465 0 465 850 0 850 0 0 450 0
+450 -1305 0 -1305 0 2 -2297z"
+                  />
+                  <path
+                    d="M10522 3028 l3 -1623 23 -108 c129 -606 564 -1059 1156 -1202 697
+-169 1431 181 1736 828 56 120 83 194 118 337 l26 105 3 1643 3 1642 -445 0
+-445 0 0 -1577 c0 -1762 5 -1638 -73 -1787 -160 -309 -536 -431 -852 -277
+-180 88 -305 245 -349 438 -14 65 -16 227 -16 1637 l0 1566 -445 0 -445 0 2
+-1622z"
+                  />
+                  <path
+                    d="M14450 2350 l0 -2300 433 2 432 3 5 1116 5 1116 444 -1035 c245 -568
+457 -1053 471 -1076 31 -48 105 -101 164 -117 63 -17 163 -7 220 21 95 48 103
+62 365 677 134 312 329 769 435 1016 l191 447 5 -1082 5 -1083 450 0 450 0 3
+2298 2 2297 -454 0 c-423 0 -454 -1 -461 -17 -10 -27 -1084 -2840 -1107 -2902
+l-21 -54 -594 1486 -595 1487 -424 0 -424 0 0 -2300z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="footer_tab">
+              <select class="btn">
+                <option selected disabled>family site</option>
+                <option value="">family site</option>
+                <option value="">호암미술관</option>
+                <option value="">삼성재단</option>
+              </select>
+            </div>
+          </div>
+          <div class="foundation">
+            (재)삼성문화재단 유문형 110-82-05953 서울시 용산구 이태원로55길
+            60-16 (한남동), 문의: 02-2014-6900 LEEUM MUSEUM OF ART 60-16
+            ITAEWON_RO 55-GIL, YONGSAN-GU, SEOUL, KOREA 04348
+          </div>
+          <div class="footer_menu">
+            미술관 소개 | 공지 | 보도자료 | 법인회원 | 이메일 문의 | 개인정보
+            처리방침 | 개인정보처리방침
+          </div>
+          <div class="copyright">
+            Ⓒ Leeum Museum of Art, All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+      <div class="top_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

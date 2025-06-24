@@ -1,0 +1,864 @@
+.wrap {
+  background-color: #f3f0ee;
+  color: #222;
+}
+.wrap .contain,
+.wrap .banner_maintitle {
+  padding: 0 50px;
+}
+.wrap .banner_maintitle,
+.maintitle {
+  font-size: 9.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.wrap .hover_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  opacity: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(217, 217, 217, 0.5);
+}
+.wrap .art,
+.sec3_box2 {
+  position: relative;
+  overflow: hidden;
+}
+.wrap .art:hover .hover_text {
+  opacity: 1;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.titles,
+.wrap .title,
+.sec3_amenities {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.banner .contain,
+.sec1_box,
+.subtitle1 {
+  padding-top: 60px;
+}
+.wrap .title,
+.section3 {
+  padding-top: 100px;
+}
+.subtitles,
+.subtitle1,
+.wrap .subtitle {
+  font-size: 2.188rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header_area {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+.header_area.scroll {
+  position: fixed;
+  height: auto;
+  animation: scroll 0.3s linear;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header_area .contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_area .contain .logo {
+  width: 236px;
+  cursor: pointer;
+}
+.header_box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.login_text,
+.banner .contain,
+.content {
+  display: flex;
+  gap: 20px;
+}
+.section1 .slider {
+  display: flex;
+  gap: 30px;
+}
+.header_icon {
+  width: 30px;
+  height: 30px;
+}
+.banner {
+  padding-top: 200px;
+}
+.sec2_artwork8,
+.sec2_artworkbox .tb1,
+.sec2_artworkbox .sec2_artwork6 {
+  margin-top: 20px;
+}
+.banner .bn_box2,
+.banner .bn_box3,
+.card_body {
+  padding-top: 20px;
+}
+.banner .artwork_text,
+.section1 .day,
+.foundation {
+  padding-bottom: 20px;
+}
+/* -----------------베너 이미지----------------------- */
+.media_box {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 20px;
+}
+.banner .art_img,
+.section2 .art_img {
+  height: 100%;
+}
+.banner .artwork4 {
+  height: 580px;
+}
+.banner .bn_box1 {
+  display: grid;
+  grid-template-columns: 1.47fr 0.95fr;
+  gap: 20px;
+}
+.banner .bn_box2 {
+  display: grid;
+  grid-template-columns: 0.95fr 1.46fr;
+  gap: 20px;
+}
+.banner .bn_box3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.wrap h2,
+.btn_text,
+.card_btn {
+  font-weight: 600;
+}
+.wrap h2,
+.sec2_box4 .subname {
+  font-size: 1.5rem;
+}
+.artwork_text,
+.section1 .ex_prgram_title,
+.amenities_textbox .b1,
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner .bn_artist_name {
+  font-size: 1.375rem;
+}
+.banner span,
+.section3 .subtt {
+  font-size: 1.125rem;
+}
+.section1,
+.section2,
+.sec3_box2 {
+  margin-top: 300px;
+}
+.section1 .swiper {
+  width: 100%;
+  height: 100%;
+}
+.section1 .swiper-wrapper {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.section1 .slide_img {
+  width: 1206px;
+  height: 100%;
+  cursor: pointer;
+}
+.section1 .day,
+.section3 .booktitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.section1 .pagination_fraction {
+  --swiper-theme-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.section3 .swiper-button-next,
+.section3 .swiper-button-prev {
+  color: #ffffff;
+}
+.headertext,
+.section1 .sec1_text,
+.size,
+.card_body p {
+  font-size: 1.25rem;
+}
+.section1 .sec1_text {
+  padding-top: 50px;
+}
+.reservation_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #222;
+  padding: 5px 20px;
+}
+.btn_icon {
+  width: 18px;
+  height: 18px;
+}
+.sec1_slide_text {
+  width: 536px;
+  position: relative;
+}
+.section2 .contain {
+  background-color: #222;
+  padding-bottom: 300px;
+  margin-top: -8px;
+  height: 100%;
+}
+.maintitle {
+  line-height: 0.7;
+}
+.program,
+.text_icon:hover,
+.card_iconbox:hover {
+  color: #fff;
+  background-color: #222;
+}
+.wrap .title {
+  color: #fff;
+}
+.section2 .tt1 {
+  color: #fff;
+  padding: 40px 0;
+}
+/* -----------------sec2 이미지--------------------------- */
+.sub_artbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.sec2_box1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.sec2_artwork1,
+.sec2_artwork6 {
+  height: 770px;
+}
+.sec2_artworkbox .sec2_artwork7,
+.sec2_artworkbox .sec2_artwork8 {
+  height: 570px;
+}
+/* --------------------------------------------------- */
+/* .sec2_artwork1,
+.banner .artwork4 {
+  transform: rotateY(180deg) !important;
+}
+.sec2_artwork1:hover,
+.banner .artwork4:hover {
+  transform: rotateY(360deg) !important;
+} */
+.secondSwiper {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  position: relative;
+}
+.secondSwiper .swiper-slide {
+  width: 100%;
+  transition: 0.3s;
+}
+.secondSwiper .swiper-slide img {
+  filter: grayscale(1);
+}
+.antique_imgbox {
+  flex-wrap: wrap;
+}
+/* ----------------sec2 3번째 이미지-------------------- */
+.sec2_box3 .content_imgbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.sec2_contentimg1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.antique_imgbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+/* -------------sec2 4번째 이미지------------ */
+.antique_textbox {
+  background-color: #fff;
+  padding: 30px;
+}
+.box4_title {
+  font-size: 2rem;
+}
+.section3 .thirdSwiper {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+}
+.section3 .swiper-wrapper {
+  width: 1000%;
+  height: 100%;
+  display: flex;
+}
+.sec3_slideimg {
+  width: 100%;
+  height: 380px;
+}
+.slidetext_box {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+.section3 .place {
+  font-size: 1rem;
+}
+.sec3_amenities,
+.footer_menu,
+.copyright {
+  padding-bottom: 60px;
+}
+/* ----------마지막 편의 시설 이미지--------------------- */
+.amenities_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.amenities_textbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.text_icon,
+.card_iconbox,
+.footer_tab .btn,
+.foundation,
+.footer_menu {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.text_icon {
+  z-index: 1;
+}
+.text_icon,
+.card_iconbox {
+  border: 2px solid #2c2c2c;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.text_icon:hover,
+.card_iconbox:hover {
+  fill: #fff;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.card.modalopen {
+  opacity: 1;
+  z-index: 99;
+}
+.card_wrap {
+  width: 762px;
+  height: 634px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: #fff;
+}
+.card_top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.card_iconbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.card_icon {
+  padding-top: 8px;
+  width: 25px;
+}
+.card_mainimg {
+  width: 702px;
+  height: 300px;
+}
+.sub_text {
+  cursor: pointer;
+}
+footer {
+  height: 100%;
+  margin-top: 300px;
+  background-color: #222;
+  color: #fff;
+}
+.footer_tad_logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.footer_logo {
+  width: 153px;
+  height: 39px;
+  fill: #fff;
+}
+.relevant_information {
+  border-bottom: 3px solid #fff;
+  padding: 30px 0;
+  font-size: 1.5rem;
+}
+.top_btn {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  position: fixed;
+  bottom: 80px;
+  right: 55px;
+  z-index: 99999;
+  border-radius: 50%;
+  border: 2px solid #222;
+  background-color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 1800px) {
+  .wrap .banner_maintitle {
+    font-size: 9rem;
+  }
+  .banner .artwork4 {
+    height: 542px;
+  }
+  .banner .artwork5 {
+    height: 294px;
+  }
+  .sub_artbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .sec2_box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .sec2_artwork1,
+  .sec2_artwork6 {
+    height: 740px;
+  }
+  .sec2_artworkbox .sec2_artwork7,
+  .sec2_artworkbox .sec2_artwork8 {
+    height: 544px;
+  }
+}
+@media (max-width: 1650px) {
+  .header_area .contain .logo {
+    width: 190px;
+  }
+  .wrap .banner_maintitle,
+  .maintitle {
+    font-size: 8.2rem;
+  }
+  .banner span,
+  .section3 .subtt,
+  .headertext,
+  .section1 .sec1_text,
+  .size {
+    font-size: 1rem;
+  }
+  .header_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .banner .bn_artist_name {
+    font-size: 1.25rem;
+  }
+  .banner .artwork4 {
+    height: 488px;
+  }
+  .banner .artwork5 {
+    height: 268px;
+  }
+  .sec2_artwork1,
+  .sec2_artwork6 {
+    height: 640px;
+  }
+  .sec2_artworkbox .sec2_artwork7,
+  .sec2_artworkbox .sec2_artwork8 {
+    height: 478px;
+  }
+  .wrap h2,
+  .box4_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .banner .bn_artist_name,
+  .sec2_box4 .subname {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1450px) {
+  .wrap .banner_maintitle,
+  .maintitle {
+    font-size: 7.35rem;
+  }
+  .wrap h2,
+  .box4_title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .card_body p {
+    font-size: 1.25rem;
+  }
+  .banner .bn_artist_name,
+  .sec2_box4 .subname {
+    font-size: 1rem;
+  }
+  .banner .contain,
+  .sec1_box,
+  .subtitle1 {
+    padding-top: 40px;
+  }
+  .banner .artwork4 {
+    height: 416px;
+  }
+  .banner .artwork5 {
+    height: 232px;
+  }
+  .sec2_artwork1,
+  .sec2_artwork6 {
+    height: 600px;
+  }
+  .sec2_artworkbox .sec2_artwork7,
+  .sec2_artworkbox .sec2_artwork8 {
+    height: 435px;
+  }
+  .section1,
+  .section2,
+  .sec3_box2 {
+    margin-top: 200px;
+  }
+  .section2 .tt1 {
+    padding-bottom: 30px;
+  }
+  .amenities_textbox .b1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1250px) {
+  .wrap .banner_maintitle,
+  .maintitle {
+    font-size: 6.25rem;
+  }
+  .wrap h2,
+  .box4_title,
+  .amenities_textbox .b1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .card_body p {
+    font-size: 1rem;
+  }
+  .banner .bn_artist_name,
+  .sec2_box4 .subname {
+    font-size: 0.875rem;
+  }
+  .banner .art {
+    height: 100%;
+  }
+  .banner .contain {
+    flex-direction: column;
+  }
+  .artwork_box.box3 {
+    height: 390px;
+  }
+  .sec2_artwork1,
+  .sec2_artwork6 {
+    height: 520px;
+  }
+  .sec2_artworkbox .sec2_artwork7,
+  .sec2_artworkbox .sec2_artwork8 {
+    height: 374px;
+  }
+  .sec1_slide_text {
+    display: none;
+  }
+  .antique_imgbox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 960px) {
+  .banner span,
+  .section2 span {
+    display: none;
+  }
+  .section1 .pagination_fraction {
+    padding-top: 10px;
+    height: 30px;
+    z-index: 999;
+    font-size: 1rem;
+    color: #222;
+  }
+  .section1 .slide_img {
+    width: 100%;
+    height: auto;
+  }
+  .titles,
+  .wrap .title,
+  .sec3_amenities {
+    font-size: 4.5rem;
+  }
+  .wrap h2,
+  .box4_title,
+  .amenities_textbox .b1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .sec2_box4 .subnam,
+  .banner .bn_artist_name {
+    font-size: 1.25rem;
+  }
+  .section1,
+  .section2,
+  .sec3_box2 {
+    margin-top: 100px;
+  }
+  .wrap .title,
+  .section3 {
+    padding-top: 80px;
+  }
+  .media_box {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 20px;
+  }
+  .banner .artwork4 {
+    height: 510px;
+  }
+  .banner .artwork5 {
+    height: 280px;
+  }
+  .bn_box3 {
+    height: 292px;
+  }
+  .sec2_box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec2_box1 .artb1,
+  .sec2_box1 .artb2,
+  .sec2_box1 .artb3 {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+  }
+  .sub_artbox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .sec2_box1 .art {
+    height: 100%;
+  }
+  .sec2_artwork8,
+  .sec2_artworkbox .tb1,
+  .sec2_artworkbox .sec2_artwork6 {
+    margin-top: 0;
+  }
+  .sec2_box3 .content_imgbox {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sec2_contentimg1 {
+    width: 100%;
+  }
+  .antique_imgbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .amenities_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .relevant_information {
+    font-size: 1.25rem;
+  }
+  .footer_tab .btn,
+  .foundation,
+  .footer_menu {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .wrap .hover_text,
+  .antique_textbox {
+    padding: 20px;
+  }
+  .wrap .contain,
+  .wrap .banner_maintitle,
+  .card {
+    padding: 0 30px;
+  }
+  .header_area .contain .logo {
+    width: 160px;
+  }
+  .login_text,
+  .banner .bn_artist_name,
+  .sec2_artist_name {
+    display: none;
+  }
+  .banner {
+    padding-top: 120px;
+  }
+  .wrap .banner_maintitle,
+  .maintitle,
+  .titles,
+  .section2 .title,
+  .sec3_amenities {
+    font-size: 3rem;
+  }
+  .sec3_amenities {
+    padding-bottom: 40px;
+  }
+  .maintitle {
+    line-height: 1;
+  }
+  .section2 .program {
+    padding-top: 80px;
+    line-height: 0.7;
+  }
+  .banner .contain,
+  .section3 .thirdSwiper {
+    padding-top: 20px;
+  }
+  .banner .artwork_text {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+  .artwork_box.box2 .artwork_text,
+  .card_top {
+    padding-bottom: 20px;
+  }
+  .wrap h2,
+  .box4_title,
+  .amenities_textbox .b1,
+  .card-title {
+    font-size: 1.25rem;
+  }
+  .antique_imgbox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .media_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .artwork_box {
+    width: 100%;
+  }
+  .banner .bn_box1,
+  .banner .bn_box2 {
+    grid-template-columns: none;
+  }
+  .artwork_box.box3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+  .banner .artwork5 {
+    height: 100%;
+  }
+  .banner .bn_box3 {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    padding-top: 0;
+  }
+  .art_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .banner .artwork4 {
+    height: 100%;
+  }
+  .banner .contain,
+  .sec1_box,
+  .subtitle1,
+  .section2 .tt1 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+  .subtitles {
+    font-size: 1.5rem;
+  }
+  .section3 {
+    padding-top: 40px;
+  }
+  .sec3_box2 {
+    margin-top: 60px;
+  }
+  footer {
+    margin-top: 140px;
+  }
+  .card_wrap {
+    width: 100%;
+    height: 500px;
+  }
+  .card_mainimg {
+    width: 424px;
+    height: 200px;
+  }
+}
