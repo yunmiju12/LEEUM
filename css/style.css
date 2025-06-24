@@ -792,8 +792,7 @@ footer {
   }
   .wrap h2,
   .box4_title,
-  .amenities_textbox .b1,
-  .card-title {
+  .amenities_textbox .b1 {
     font-size: 1.25rem;
   }
   .antique_imgbox {
@@ -860,5 +859,8 @@ footer {
   .card_mainimg {
     width: 100%;
     height: 200px;
+  }
+  .card-title {
+    font-size: 1.2rem;
   }
 }
